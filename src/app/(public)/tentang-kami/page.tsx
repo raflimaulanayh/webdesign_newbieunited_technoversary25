@@ -1,4 +1,4 @@
-import { Tentang, VisiMisi } from '@/components/organisms/tentang-kami'
+import { Tentang, VisiMisi, CallToAction } from '@/components/organisms/tentang-kami'
 import { GeneralLayout } from '@/components/templates/general-layout'
 
 export default function TentangPage() {
@@ -6,6 +6,7 @@ export default function TentangPage() {
     <GeneralLayout className="min-h-screen">
       <Tentang />
       <VisiMisi />
+      <CallToAction />
     </GeneralLayout>
   )
 }
