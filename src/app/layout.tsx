@@ -50,13 +50,11 @@ export default async function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn('min-h-screen antialiased', sans.variable)}>
-        <React.Fragment>
-          <SplashScreen />
-          <NextTopLoader color="#00A8CC" showSpinner={false} />
-          {children}
-          <Toaster richColors position="top-right" closeButton theme="light" />
-        </React.Fragment>
+      <body className={cn('min-h-screen bg-gray-50 antialiased', sans.variable)}>
+        <SplashScreen />
+        <NextTopLoader color="#00A8CC" showSpinner={false} />
+        {children}
+        <Toaster richColors position="top-right" closeButton theme="light" />
         <Analytics />
       </body>
     </html>
