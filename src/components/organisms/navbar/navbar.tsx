@@ -26,7 +26,7 @@ export const Navbar = () => {
       <header
         className={cn(
           'sticky top-0 z-50 flex w-full items-center transition-all duration-500',
-          scrolled ? 'h-21 bg-gray-50/90 shadow-sm backdrop-blur-sm' : 'h-23 bg-gray-50'
+          scrolled ? 'h-21 bg-slate-50/90 shadow-sm backdrop-blur-sm' : 'h-23 bg-slate-50'
         )}
       >
         <Container className="flex items-center justify-between gap-4">

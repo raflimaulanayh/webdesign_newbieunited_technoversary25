@@ -7,7 +7,7 @@ import { useSplashStore } from '@/hooks/useSplashStore'
 
 const Navbar = dynamic(() => import('@/components/organisms/navbar').then((mod) => mod.Navbar), {
   ssr: false,
-  loading: () => <div className="sticky top-0 h-23 w-full bg-gray-50 shadow-sm" />
+  loading: () => <div className="sticky top-0 h-23 w-full bg-slate-50 shadow-sm" />
 })
 
 const Footer = dynamic(() => import('@/components/organisms/footer').then((mod) => mod.Footer), {

@@ -12,10 +12,10 @@ export default function NotFound() {
       <Container className="flex max-w-3xl! flex-col items-center gap-6 text-center lg:gap-8">
         <header className="flex flex-col items-center gap-y-3 lg:gap-y-5">
           <TbError404 size={200} className="h-28 w-64 text-secondary" />
-          <h1 className="text-xl font-semibold tracking-tight text-balance text-gray-900 sm:text-4xl">
+          <h1 className="text-xl font-semibold tracking-tight text-balance text-slate-900 sm:text-4xl">
             Sorry, Page Not Found
           </h1>
-          <p className="text-sm text-pretty text-gray-600 sm:text-base">
+          <p className="text-sm text-pretty text-slate-600 sm:text-base">
             The page you are looking for is not available or has been moved. Please return to the main page or contact our
             support team for further assistance.
           </p>
