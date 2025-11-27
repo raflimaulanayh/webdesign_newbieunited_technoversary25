@@ -1,7 +1,7 @@
 'use client'
 
 import { MENU } from '@/constants/menu'
-import { HeadsetIcon, ListIcon } from '@phosphor-icons/react'
+import { ListIcon } from '@phosphor-icons/react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -49,10 +49,6 @@ export const Navbar = () => {
           </nav>
 
           <nav className="flex items-center gap-5">
-            <Button url="/chatbot" rounded="full" className="size-10 justify-center max-lg:hidden">
-              <HeadsetIcon className="size-7" />
-            </Button>
-
             <Button variant="outline-green" url="/registrasi">
               Gabung
             </Button>

@@ -1,11 +1,10 @@
 import { MENU } from '@/constants/menu'
-import { HeadsetIcon, XIcon } from '@phosphor-icons/react'
+import { XIcon } from '@phosphor-icons/react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
-import { Button } from '@/components/atoms/ui/button'
 import { Container } from '@/components/templates/container'
 
 import { cn } from '@/utils/cn'
@@ -22,7 +21,7 @@ export const MobileNavbar = ({ isOpen, setIsOpen }: Props) => {
     <AnimatePresence>
       {isOpen && (
         <motion.header
-          className="fixed top-0 right-0 z-[99] h-screen w-full origin-top-right bg-white lg:hidden"
+          className="fixed top-0 right-0 z-99 h-screen w-full origin-top-right bg-white lg:hidden"
           initial={{ opacity: 0, scale: 0.85 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.9 }}
@@ -77,7 +76,7 @@ export const MobileNavbar = ({ isOpen, setIsOpen }: Props) => {
                   {item.label}
                   <span
                     className={cn(
-                      'absolute -bottom-1 left-0 h-[2px] bg-primary transition-all',
+                      'absolute -bottom-1 left-0 h-0.5 bg-primary transition-all',
                       pathname === item.url ? 'w-full' : 'w-0 group-hover:w-full'
                     )}
                   />
@@ -95,15 +94,7 @@ export const MobileNavbar = ({ isOpen, setIsOpen }: Props) => {
                 stiffness: 260,
                 damping: 14
               }}
-            >
-              <Button url="/chatbot" rounded="full" className="size-10 justify-center">
-                <HeadsetIcon className="size-7" />
-              </Button>
-
-              <Button variant="outline-green" url="/mitra">
-                Gabung
-              </Button>
-            </motion.div>
+            ></motion.div>
           </nav>
         </motion.header>
       )}
