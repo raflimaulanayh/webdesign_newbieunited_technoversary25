@@ -36,7 +36,7 @@ export const CtaBanner = ({ title, highlightText, description, ctaLabel, ctaLink
 
   return (
     <section className="w-full py-8">
-      <div className="relative flex flex-col items-center justify-between gap-12 overflow-hidden rounded-3xl bg-primary p-8  md:p-12 lg:flex-row lg:p-16">
+      <div className="relative flex flex-col-reverse items-center justify-between gap-12 overflow-hidden rounded-3xl bg-primary p-8  md:p-12 lg:flex-row lg:p-16">
         <div className="relative z-10 max-w-2xl flex-1 space-y-6 text-center lg:text-left">
           <h2 className="text-3xl leading-snug font-bold text-white md:text-4xl">{renderTitle()}</h2>
 
