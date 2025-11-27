@@ -9,17 +9,17 @@ export const Footer = () => (
     <h2 className="sr-only">Meal Up Footer</h2>
 
     <Container className="flex flex-col justify-between gap-8 py-10 md:flex-row lg:gap-10 lg:py-16">
-      <div className="flex flex-col gap-y-6 text-xl font-semibold text-white">
+      <div className="flex max-w-60 flex-col gap-y-6 text-xl font-semibold text-white">
         <Link href="/">
           <Image
             src="/static/images/logo-white.png"
             alt="Logo of Meal Up"
             width={280}
             height={215}
-            className="w-52 object-contain lg:w-70"
+            className="w-52 object-contain lg:w-60"
           />
         </Link>
-        <p className="max-w-72">Level Up Your Food, Zero Down The Waste</p>
+        <p>Level Up Your Food, Zero Down The Waste</p>
       </div>
 
       <FooterSection title="Bantuan" links={HELP_LINKS} />

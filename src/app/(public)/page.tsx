@@ -7,19 +7,21 @@ import {
   HeroLanding,
   ImpactLanding,
   MapLanding,
-  SponsorLanding
+  SponsorLanding,
+  TestimonialLanding
 } from '@/components/organisms/landing'
 import { GeneralLayout } from '@/components/templates/general-layout'
 
 export default function LandingPage() {
   return (
-    <GeneralLayout className="min-h-screen">
+    <GeneralLayout>
       <HeroLanding />
       <AwarenessLanding />
       <CategoryLanding />
       <ImpactLanding />
       <CallToAction variant="minimal" />
       <MapLanding />
+      <TestimonialLanding />
       <SponsorLanding />
       <CTALanding />
       <DownloadLanding />
