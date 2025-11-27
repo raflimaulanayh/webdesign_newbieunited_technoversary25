@@ -1,2 +1,1 @@
-export * from './tentang'
 export * from './visi-misi'
