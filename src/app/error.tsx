@@ -44,14 +44,14 @@ export default function Error({ error, reset }: { error: Error & { digest?: stri
       <Container className="flex max-w-3xl! flex-col items-center gap-6 text-center lg:gap-8">
         <header className="flex flex-col items-center gap-y-3 lg:gap-y-5">
           <TbFaceIdError size={200} className="h-28 w-64 text-secondary" />
-          <h1 className="text-xl font-semibold tracking-tight text-balance text-gray-900 sm:text-4xl">Terjadi Kesalahan</h1>
+          <h1 className="text-xl font-semibold tracking-tight text-balance text-slate-900 sm:text-4xl">Terjadi Kesalahan</h1>
           {!network.online ? (
-            <p className="text-sm font-medium text-pretty text-gray-600 sm:text-base">
+            <p className="text-sm font-medium text-pretty text-slate-600 sm:text-base">
               We apologize, an unexpected error has occurred in the system. Please try again in a few moments or contact our
               support service if you need further assistance.
             </p>
           ) : (
-            <p className="text-sm text-pretty text-gray-600 sm:text-base">
+            <p className="text-sm text-pretty text-slate-600 sm:text-base">
               We apologize for the unexpected error in the system. Please try again in a few moments or contact our support
               service if you need further assistance.
             </p>
@@ -59,10 +59,10 @@ export default function Error({ error, reset }: { error: Error & { digest?: stri
 
           {process.env.NODE_ENV === 'development' && (
             <details className="mb-6">
-              <summary className="cursor-pointer text-sm text-gray-600 transition-colors hover:text-foreground">
+              <summary className="cursor-pointer text-sm text-slate-600 transition-colors hover:text-foreground">
                 Detail Error (Development)
               </summary>
-              <pre className="mt-2 overflow-auto rounded bg-gray-100 p-3 text-xs text-wrap text-gray-600 hover:bg-gray-200 hover:text-gray-800">
+              <pre className="mt-2 overflow-auto rounded bg-slate-100 p-3 text-xs text-wrap text-slate-600 hover:bg-slate-200 hover:text-slate-800">
                 {error.message}
               </pre>
             </details>

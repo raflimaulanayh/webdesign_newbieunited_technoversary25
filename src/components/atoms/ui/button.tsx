@@ -16,14 +16,14 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: 'bg-primary text-white shadow-xs hover:bg-primary/90 disabled:bg-gray-600',
-        secondary: 'bg-secondary text-white shadow-xs hover:bg-secondary/90 disabled:bg-gray-600',
+        default: 'bg-primary text-white shadow-xs hover:bg-primary/90 disabled:bg-slate-600',
+        secondary: 'bg-secondary text-white shadow-xs hover:bg-secondary/90 disabled:bg-slate-600',
         destructive: 'bg-red-500 text-white shadow-xs hover:bg-red-500/90 focus-visible:ring-red-500/20',
         outline: 'border shadow-xs hover:bg-white/30 hover:text-white border-white text-white',
         ghost: 'hover:bg-accent hover:text-accent-foreground',
         link: 'text-primary underline-offset-4 hover:underline',
-        'accent-orange': 'bg-accent-orange text-white shadow-xs hover:bg-accent-orange/90 disabled:bg-gray-600',
-        'outline-gray': 'bg-transparent text-gray-500 shadow-xs hover:bg-gray-300/80 border border-gray-300',
+        'accent-orange': 'bg-accent-orange text-white shadow-xs hover:bg-accent-orange/90 disabled:bg-slate-600',
+        'outline-slate': 'bg-transparent text-slate-500 shadow-xs hover:bg-slate-300/80 border border-slate-300',
         'outline-blue': 'bg-transparent text-primary shadow-xs hover:bg-primary/10 border border-primary',
         'outline-green': 'bg-transparent text-secondary shadow-xs hover:bg-secondary/10 border border-secondary',
         'outline-orange':
