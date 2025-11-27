@@ -8,6 +8,7 @@ import NextTopLoader from 'nextjs-toploader'
 import React from 'react'
 
 import { Toaster } from '@/components/atoms/ui/sonner'
+import { SplashScreen } from '@/components/organisms/splash-screen'
 
 import { cn } from '@/utils/cn'
 
@@ -51,6 +52,7 @@ export default async function RootLayout({
     <html lang="en">
       <body className={cn('min-h-screen antialiased', sans.variable)}>
         <React.Fragment>
+          <SplashScreen />
           <NextTopLoader color="#00A8CC" showSpinner={false} />
           {children}
           <Toaster richColors position="top-right" closeButton theme="light" />
