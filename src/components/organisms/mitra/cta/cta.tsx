@@ -1,14 +1,13 @@
 'use client'
 
-import { CtaBanner } from '@/components/molecules/card/cta-card'
+import { CTACard } from '@/components/molecules/card/cta-card'
 import { Container } from '@/components/templates/container'
 
 export const CallToAction = () => {
   return (
     <Container className="mb-32">
-      <CtaBanner
+      <CTACard
         title="Siap Level Up Bisnis Kulinermu?"
-        highlightText="Level Up"
         description="Ubah overstock makanan menjadi pendapatan tambahan. Balik modal setiap hari, tanpa ada yang terbuang."
         ctaLabel="Daftar sekarang"
         ctaLink="/registrasi"
