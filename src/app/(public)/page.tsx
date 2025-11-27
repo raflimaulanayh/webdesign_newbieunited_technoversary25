@@ -2,6 +2,7 @@ import {
   AwarenessLanding,
   CallToAction,
   CategoryLanding,
+  CTALanding,
   HeroLanding,
   ImpactLanding,
   MapLanding,
@@ -19,6 +20,7 @@ export default function LandingPage() {
       <CallToAction variant="minimal" />
       <MapLanding />
       <SponsorLanding />
+      <CTALanding />
     </GeneralLayout>
   )
 }

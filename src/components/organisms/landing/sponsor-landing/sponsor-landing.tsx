@@ -42,7 +42,7 @@ const itemVariants: Variants = {
 
 export const SponsorLanding = () => {
   return (
-    <section className="py-10 lg:py-16">
+    <section className="py-10 pb-20! lg:py-16">
       <Container className="flex flex-col gap-10 lg:gap-14">
         <motion.h2
           variants={headerVariants}
