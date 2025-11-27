@@ -4,11 +4,11 @@ import { TbError404 } from 'react-icons/tb'
 
 import { Button } from '@/components/atoms/ui/button'
 import { Container } from '@/components/templates/container'
-import { SiteLayout } from '@/components/templates/general-layout'
+import { GeneralLayout } from '@/components/templates/general-layout'
 
 export default function NotFound() {
   return (
-    <SiteLayout className="grid min-h-[90vh] place-items-center bg-white py-16 lg:py-40">
+    <GeneralLayout className="grid min-h-[90vh] place-items-center bg-white py-16 lg:py-40">
       <Container className="flex max-w-3xl! flex-col items-center gap-6 text-center lg:gap-8">
         <header className="flex flex-col items-center gap-y-3 lg:gap-y-5">
           <TbError404 size={200} className="h-28 w-64 text-secondary" />
@@ -30,6 +30,6 @@ export default function NotFound() {
           </Button>
         </div>
       </Container>
-    </SiteLayout>
+    </GeneralLayout>
   )
 }

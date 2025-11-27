@@ -20,4 +20,9 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  button,
+  a {
+    @apply cursor-pointer transition-all hover:scale-[0.98];
+  }
 }

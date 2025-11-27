@@ -4,19 +4,20 @@ import dynamic from 'next/dynamic'
 import { Fragment } from 'react'
 
 const Navbar = dynamic(() => import('@/components/organisms/navbar').then((mod) => mod.Navbar), {
-  ssr: false
+  ssr: false,
+  loading: () => <div className="sticky top-0 h-23 w-full bg-gray-50 shadow-sm" />
 })
 
 const Footer = dynamic(() => import('@/components/organisms/footer').then((mod) => mod.Footer), {
   ssr: false
 })
 
-interface SiteLayoutProps {
+interface GeneralLayoutProps {
   children: React.ReactNode
   className?: string
 }
 
-export const SiteLayout = ({ children, className }: SiteLayoutProps) => {
+export const GeneralLayout = ({ children, className }: GeneralLayoutProps) => {
   return (
     <Fragment>
       <Navbar />

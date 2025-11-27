@@ -6,7 +6,7 @@ import { useNetworkState } from 'react-use'
 
 import { Button } from '@/components/atoms/ui/button'
 import { Container } from '@/components/templates/container'
-import { SiteLayout } from '@/components/templates/general-layout'
+import { GeneralLayout } from '@/components/templates/general-layout'
 
 const MAX_RETRY = 3
 
@@ -40,7 +40,7 @@ export default function Error({ error, reset }: { error: Error & { digest?: stri
   }
 
   return (
-    <SiteLayout className="grid min-h-screen place-items-center bg-white py-16 lg:py-40">
+    <GeneralLayout className="grid min-h-screen place-items-center bg-white py-16 lg:py-40">
       <Container className="flex max-w-3xl! flex-col items-center gap-6 text-center lg:gap-8">
         <header className="flex flex-col items-center gap-y-3 lg:gap-y-5">
           <TbFaceIdError size={200} className="h-28 w-64 text-secondary" />
@@ -78,6 +78,6 @@ export default function Error({ error, reset }: { error: Error & { digest?: stri
           </Button>
         </div>
       </Container>
-    </SiteLayout>
+    </GeneralLayout>
   )
 }
