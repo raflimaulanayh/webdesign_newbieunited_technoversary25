@@ -5,12 +5,29 @@ import { useEffect, useState } from 'react'
 
 export const SplashScreen = () => {
   const [show, setShow] = useState(true)
+  const [minimumTimePassed, setMinimumTimePassed] = useState(false)
+  const MIN_DURATION = 2000
 
   useEffect(() => {
-    const timer = setTimeout(() => setShow(false), 2600)
+    const timer = setTimeout(() => setMinimumTimePassed(true), MIN_DURATION)
 
-    return () => clearTimeout(timer)
-  }, [])
+    const handleLoaded = () => {
+      if (minimumTimePassed) setShow(false)
+    }
+
+    window.addEventListener('load', handleLoaded)
+
+    return () => {
+      clearTimeout(timer)
+      window.removeEventListener('load', handleLoaded)
+    }
+  }, [minimumTimePassed])
+
+  useEffect(() => {
+    if (minimumTimePassed && document.readyState === 'complete') {
+      setShow(false)
+    }
+  }, [minimumTimePassed])
 
   return (
     <AnimatePresence>
