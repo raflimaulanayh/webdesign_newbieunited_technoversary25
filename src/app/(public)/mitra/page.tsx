@@ -1,4 +1,5 @@
-import { HeroMitra, CallToAction, CategoryMitra } from '@/components/organisms/mitra'
+import { CallToAction } from '@/components/organisms/call-to-action'
+import { HeroMitra, CategoryMitra } from '@/components/organisms/mitra'
 import { GeneralLayout } from '@/components/templates/general-layout'
 
 export default function TentangPage() {
