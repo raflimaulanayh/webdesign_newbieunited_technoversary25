@@ -45,7 +45,7 @@ Benefit Meal Up:
 Kategori yang dilayani: Siap Saji, Bahan Segar, Roti & Pastry, Surprise Box
 
 Alamat Meal Up: Jl. BKR No.63, Ancol, Kec. Regol, Kota Bandung, Jawa Barat 40253
-Email: hello@mealup.id
+Email: hello@mealup.my.id
 
 Pengetahuanmu:
 1. Cara Pesan Makanan:
