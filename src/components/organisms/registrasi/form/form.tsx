@@ -39,7 +39,7 @@ export const RegisterForm = () => {
   const CITIES = ['Jakarta', 'Bandung', 'Surabaya', 'Bali', 'Lainnya']
 
   return (
-    <Container className="py-24">
+    <Container className="pt-24 pb-16">
       <form className="grid grid-cols-1 gap-x-12 gap-y-8 md:grid-cols-2">
         <div className="space-y-6">
           <InputGroup
