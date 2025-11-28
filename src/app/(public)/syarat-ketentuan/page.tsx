@@ -1,7 +1,7 @@
 import { CallToAction } from '@/components/organisms/call-to-action'
+import { HeroBanner } from '@/components/organisms/hero-banner'
 import { Container } from '@/components/templates/container'
 import { GeneralLayout } from '@/components/templates/general-layout'
-import { Hero } from '@/components/templates/hero'
 
 export const metadata = {
   title: 'Syarat dan Ketentuan',
@@ -11,7 +11,7 @@ export const metadata = {
 export default function SyaratKetentuanPage() {
   return (
     <GeneralLayout>
-      <Hero
+      <HeroBanner
         title="Syarat dan Ketentuan"
         description="Baca dengan seksama syarat dan ketentuan penggunaan aplikasi Meal Up. Kami berkomitmen memberikan layanan terbaik dan transparan untuk seluruh pengguna demi mendukung UMKM kuliner Indonesia."
       />
@@ -64,8 +64,8 @@ export default function SyaratKetentuanPage() {
               <strong>Kontak & Bantuan</strong>
               <br />
               Untuk pertanyaan atau bantuan, silakan hubungi tim Meal Up melalui WhatsApp di{' '}
-              <a href="https://wa.me/6281234567890" className="text-blue-600 underline">
-                0812-3456-7890
+              <a href="https://wa.me/6285128025700" className="text-blue-600 underline">
+                0851-2802-5700
               </a>
               .
             </li>

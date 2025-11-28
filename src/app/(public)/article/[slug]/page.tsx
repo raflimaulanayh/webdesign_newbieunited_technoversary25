@@ -2,7 +2,6 @@
 
 import { articles } from '@/constants/article-data'
 import { useParams, notFound } from 'next/navigation'
-import React from 'react'
 
 import { ArticleDetail } from '@/components/organisms/article/detail-article/detail-article'
 

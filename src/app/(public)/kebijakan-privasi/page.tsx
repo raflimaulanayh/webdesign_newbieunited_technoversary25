@@ -1,7 +1,7 @@
 import { CallToAction } from '@/components/organisms/call-to-action'
+import { HeroBanner } from '@/components/organisms/hero-banner'
 import { Container } from '@/components/templates/container'
 import { GeneralLayout } from '@/components/templates/general-layout'
-import { Hero } from '@/components/templates/hero'
 
 export const metadata = {
   title: 'Kebijakan Privasi',
@@ -11,7 +11,7 @@ export const metadata = {
 export default function KebijakanPrivasiPage() {
   return (
     <GeneralLayout>
-      <Hero
+      <HeroBanner
         title="Kebijakan Privasi"
         description="Kami berkomitmen untuk melindungi privasi dan data pribadi Anda. Baca kebijakan privasi kami untuk memahami bagaimana informasi Anda dikumpulkan, digunakan, dan dilindungi saat menggunakan layanan Meal Up."
       />
@@ -62,8 +62,8 @@ export default function KebijakanPrivasiPage() {
               <strong>Kontak & Bantuan</strong>
               <br />
               Untuk pertanyaan atau permintaan terkait privasi, silakan hubungi tim Meal Up melalui WhatsApp di{' '}
-              <a href="https://wa.me/6281234567890" className="text-blue-600 underline">
-                0812-3456-7890
+              <a href="https://wa.me/6285128025700" className="text-blue-600 underline">
+                0851-2802-5700
               </a>
               .
             </li>

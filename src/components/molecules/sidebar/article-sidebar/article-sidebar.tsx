@@ -47,7 +47,7 @@ export const ArticleSidebar = ({ tags, relatedArticles }: ArticleSidebarProps) =
       <div>
         <h3 className="mb-6 text-lg font-bold text-gray-900">Baca Juga</h3>
         <div className="flex flex-col gap-6">
-          {relatedArticles.map((item) => (
+          {relatedArticles?.map((item) => (
             <SidebarArticleCard
               key={item.id}
               title={item.title}
