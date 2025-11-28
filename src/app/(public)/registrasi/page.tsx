@@ -17,7 +17,7 @@ export default function RegistrasiPage() {
         description="Jangan biarkan profit tergerus limbah. Naikkan level bisnismu dengan mengubah potensi kerugian menjadi pendapatan tambahan yang pasti."
       />
       <RegisterForm />
-      <CallToAction />
+      <CallToAction className="pb-28!" />
     </GeneralLayout>
   )
 }
