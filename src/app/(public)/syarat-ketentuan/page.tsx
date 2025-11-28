@@ -8,13 +8,12 @@ export const metadata = {
   description: 'Baca syarat dan ketentuan penggunaan layanan kami di halaman ini.'
 }
 
-export default function SyaratKetentuan() {
+export default function SyaratKetentuanPage() {
   return (
     <GeneralLayout>
       <Hero
         title="Syarat dan Ketentuan"
         description="Baca dengan seksama syarat dan ketentuan penggunaan aplikasi Meal Up. Kami berkomitmen memberikan layanan terbaik dan transparan untuk seluruh pengguna demi mendukung UMKM kuliner Indonesia."
-        isStore={false}
       />
       <section className="py-16">
         <Container className="mx-auto max-w-4xl space-y-6">

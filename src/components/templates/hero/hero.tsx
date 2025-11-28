@@ -8,7 +8,6 @@ import { Button } from '@/components/atoms/ui/button'
 interface HeroProps {
   title: string
   description: string
-  isStore?: boolean
 }
 
 export const Hero = ({ title, description }: HeroProps) => {
