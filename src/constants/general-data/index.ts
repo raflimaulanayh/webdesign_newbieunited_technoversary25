@@ -8,7 +8,7 @@ import {
 } from '@phosphor-icons/react'
 
 export const HELP_LINKS = [
-  { href: '/', label: 'Cara Pesan' },
+  { href: '/chatbot', label: 'Cara Pesan' },
   { href: '/chatbot', label: 'FAQ (Tanya Jawab)' },
   { href: '/kebijakan-privasi', label: 'Kebijakan Privasi' },
   { href: '/syarat-ketentuan', label: 'Syarat dan Ketentuan' }
