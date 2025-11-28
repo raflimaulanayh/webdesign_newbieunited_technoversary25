@@ -8,6 +8,7 @@ import { Button } from '@/components/atoms/ui/button'
 interface HeroProps {
   title: string
   description: string
+  isStore?: boolean
 }
 
 export const Hero = ({ title, description }: HeroProps) => {
@@ -17,7 +18,7 @@ export const Hero = ({ title, description }: HeroProps) => {
         <h2 className="mb-6 text-3xl font-bold tracking-tight text-white md:text-4xl">{title}</h2>
         <p className="mx-auto mb-10 max-w-4xl leading-relaxed text-white/90">{description}</p>
 
-        <div className="flex flex-col items-center justify-center gap-8 pb-14 sm:flex-row">
+        <div className="flex items-center justify-center gap-4 pb-14">
           <Button size="lg" variant="accent-orange" url="/register">
             Daftar sekarang
           </Button>
@@ -27,7 +28,7 @@ export const Hero = ({ title, description }: HeroProps) => {
               alt="Get it on Google Play"
               width={180}
               height={53}
-              className="h-[46px] w-auto md:h-[48px]"
+              className="h-[46px] w-auto md:h-12"
             />
           </Link>
         </div>
