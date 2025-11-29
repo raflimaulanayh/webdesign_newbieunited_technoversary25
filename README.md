@@ -47,7 +47,7 @@ pnpm install
 1.  Buat file baru bernama `.env` di *root folder* proyek.
 2.  Salin dan tempel konfigurasi berikut ke dalam file tersebut:
 ```
-GOOGLE_GENERATIVE_AI_API_KEY=AIzaSyCpIrsXQWJw8EQacnu4ORyeyFiuFn55GCA
+GOOGLE_GENERATIVE_AI_API_KEY=AIzaSyCRzKXvNsdJvyKiJLX1A_gafQL7ZD_l6S4
 ```
 
 **5. Jalankan Server Development**
